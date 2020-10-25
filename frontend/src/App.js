@@ -1,8 +1,15 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Header />
+      <main>
+        <h1>Hello</h1>
+      </main>
+      <Footer />
+    </>
   );
 };
 
