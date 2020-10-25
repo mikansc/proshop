@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -6,7 +7,9 @@ const App = () => {
     <>
       <Header />
       <main>
-        <h1>Hello</h1>
+        <Container>
+          <h1>Hello</h1>
+        </Container>
       </main>
       <Footer />
     </>
