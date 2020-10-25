@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ProShop server",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
