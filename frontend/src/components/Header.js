@@ -21,7 +21,7 @@ const Header = () => {
                 <i className="fas fa-shopping-cart"></i> Cart
               </Nav.Link>
               <Nav.Link href="/login">
-                <i class="fas fa-user" aria-hidden="true"></i> Login
+                <i className="fas fa-user" aria-hidden="true"></i> Login
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
