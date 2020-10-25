@@ -25,3 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 **.code-workspace
+
+# dummy data
+frontend/src/products.js
+frontend/public/images/*
