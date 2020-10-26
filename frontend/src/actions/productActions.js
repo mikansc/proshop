@@ -8,13 +8,13 @@ import {
   PRODUCT_LIST_SUCCESS,
 } from "../constants/productConstants";
 
-export const listProducts = () => async (dispach) => {
+export const listProducts = () => async (dispatch) => {
   try {
-    dispach({ type: PRODUCT_LIST_REQUEST });
+    dispatch({ type: PRODUCT_LIST_REQUEST });
     const { data } = await Axios.get("/api/products");
-    dispach({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
-    dispach({
+    dispatch({
       type: PRODUCT_LIST_FAIL,
       payload:
         error.response && error.response.data.message
@@ -24,13 +24,13 @@ export const listProducts = () => async (dispach) => {
   }
 };
 
-export const listProductDetails = (id) => async (dispach) => {
+export const listProductDetails = (id) => async (dispatch) => {
   try {
-    dispach({ type: PRODUCT_DETAILS_REQUEST });
+    dispatch({ type: PRODUCT_DETAILS_REQUEST });
     const { data } = await Axios.get(`/api/products/${id}`);
-    dispach({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
+    dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
   } catch (error) {
-    dispach({
+    dispatch({
       type: PRODUCT_DETAILS_FAIL,
       payload:
         error.response && error.response.data.message
