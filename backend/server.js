@@ -4,6 +4,7 @@ import colors from "colors";
 import connectDB from "./config/db.js";
 
 import productRoutes from "./routes/productRoutes.js";
+import errorMiddleware from "./middleware/errorMiddleware.js";
 
 dotenv.config();
 connectDB();
@@ -15,6 +16,10 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoutes);
+
+app.use(errorMiddleware.notFound);
+app.use(errorMiddleware.errorHandler);
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(
