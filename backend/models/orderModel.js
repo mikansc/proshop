@@ -4,7 +4,7 @@ const orderSchema = mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      require: true,
+      required: true,
       ref: "User",
     },
 
@@ -31,7 +31,7 @@ const orderSchema = mongoose.Schema(
 
     paymentMethod: {
       type: String,
-      require: true,
+      required: true,
     },
 
     paymentResult: {
@@ -43,25 +43,25 @@ const orderSchema = mongoose.Schema(
 
     taxPrice: {
       type: Number,
-      require: true,
+      required: true,
       default: 0.0,
     },
 
     shippingPrice: {
       type: Number,
-      require: true,
+      required: true,
       default: 0.0,
     },
 
     totalPrice: {
       type: Number,
-      require: true,
+      required: true,
       default: 0.0,
     },
 
     isPaid: {
       type: Boolean,
-      require: true,
+      required: true,
       default: false,
     },
 
@@ -71,7 +71,7 @@ const orderSchema = mongoose.Schema(
 
     isDelivered: {
       type: Boolean,
-      require: true,
+      required: true,
       default: false,
     },
 
