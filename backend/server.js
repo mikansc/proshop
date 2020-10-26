@@ -11,9 +11,7 @@ connectDB();
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("api is running");
-});
+app.get("/", (req, res) => res.send("Server OK"));
 
 app.use("/api/products", productRoutes);
 
