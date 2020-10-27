@@ -13,6 +13,7 @@ import {
   userUpdateProfileReducer,
 } from "./reducers/userReducers";
 
+// Create all reducers instances
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
@@ -23,6 +24,7 @@ const reducer = combineReducers({
   userUpdateProfile: userUpdateProfileReducer,
 });
 
+// Get information saved in localStorage, if any exists
 const cartItemsFromStorage = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
   : [];
@@ -31,8 +33,16 @@ const userInfoFromStorage = localStorage.getItem("userInfo")
   ? JSON.parse(localStorage.getItem("userInfo"))
   : null;
 
+const shippingAddressFromStorage = localStorage.getItem("shippingAddress")
+  ? JSON.parse(localStorage.getItem("shippingAddress"))
+  : {};
+
+// Initial Redux state with localStorage info, if exists
 const initialState = {
-  cart: { cartItems: cartItemsFromStorage },
+  cart: {
+    cartItems: cartItemsFromStorage,
+    shippingAddress: shippingAddressFromStorage,
+  },
   userLogin: { userInfo: userInfoFromStorage },
 };
 
