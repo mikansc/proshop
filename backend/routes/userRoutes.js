@@ -1,9 +1,12 @@
 import express from "express";
 import userController from "../controllers/userController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import { admin, protect } from "../middleware/authMiddleware.js";
 const router = express.Router();
 
-router.route("/").post(userController.registerUser);
+router
+  .route("/")
+  .post(userController.registerUser)
+  .get(protect, admin, userController.getUsers);
 
 router.route("/login").post(userController.authUser);
 

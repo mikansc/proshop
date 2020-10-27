@@ -95,4 +95,23 @@ const updateUserProfile = asyncHandler(async (req, res) => {
   }
   res.send({ message: "success" });
 });
-export default { authUser, getUserProfile, registerUser, updateUserProfile };
+
+// @desc    Get all users
+// @route   GET /api/users
+// @acess   Private / Admin
+const getUsers = asyncHandler(async (req, res) => {
+  const users = await User.find();
+  if (users) {
+    res.json(users);
+  } else {
+    throw new Error("Theres no users.");
+  }
+});
+
+export default {
+  authUser,
+  getUserProfile,
+  registerUser,
+  updateUserProfile,
+  getUsers,
+};

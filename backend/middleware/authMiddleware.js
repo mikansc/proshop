@@ -18,7 +18,7 @@ const protect = asyncHandler(async (req, res, next) => {
     } catch (error) {
       console.error(error);
       res.status(401);
-      throw new Error("Not authorized.");
+      throw new Error("You need to be logged in.");
     }
   }
 
@@ -28,4 +28,13 @@ const protect = asyncHandler(async (req, res, next) => {
   }
 });
 
-export { protect };
+const admin = asyncHandler(async (req, res, next) => {
+  if (req.user && req.user.isAdmin) {
+    next();
+  } else {
+    res.status(401);
+    throw new Error("You are not allowed to do this.");
+  }
+});
+
+export { protect, admin };
