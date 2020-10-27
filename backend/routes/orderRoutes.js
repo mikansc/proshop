@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.route("/").post(protect, orderController.addOrderItems);
 
+router.route("/:id").get(protect, orderController.getOrderById);
+
 export default router;
