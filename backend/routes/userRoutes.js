@@ -15,6 +15,10 @@ router
   .get(protect, userController.getUserProfile)
   .put(protect, userController.updateUserProfile);
 
-router.route("/:id").delete(protect, admin, userController.deleteUser);
+router
+  .route("/:id")
+  .delete(protect, admin, userController.deleteUser)
+  .get(protect, admin, userController.getUserById)
+  .put(protect, admin, userController.updateUser);
 
 export default router;
