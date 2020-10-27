@@ -15,4 +15,6 @@ router
   .get(protect, userController.getUserProfile)
   .put(protect, userController.updateUserProfile);
 
+router.route("/:id").delete(protect, admin, userController.deleteUser);
+
 export default router;
