@@ -51,7 +51,7 @@ export const getOrderDetails = (orderId) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await Axios.get(`/api/orders${orderId}`, config);
+    const { data } = await Axios.get(`/api/orders/${orderId}`, config);
     dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data });
     //
   } catch (error) {
