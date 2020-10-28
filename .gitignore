@@ -29,3 +29,6 @@ yarn-error.log*
 # dummy data
 frontend/src/products.js
 frontend/public/images/*
+uploads/*.jpg
+uploads/*.jpeg
+uploads/*.png
