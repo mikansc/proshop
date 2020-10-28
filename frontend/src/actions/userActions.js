@@ -195,8 +195,8 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await Axios.delete(`/api/users/${id}`, config);
-    dispatch({ type: USER_DELETE_SUCCESS, payload: data });
+    await Axios.delete(`/api/users/${id}`, config);
+    dispatch({ type: USER_DELETE_SUCCESS });
     //
   } catch (error) {
     dispatch({
