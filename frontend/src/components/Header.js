@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { logout } from "../actions/userActions";
+import { resetCart } from "../actions/cartActions";
 
 const Header = () => {
   const userLogin = useSelector((state) => state.userLogin);
@@ -10,6 +11,7 @@ const Header = () => {
 
   const logoutHandler = () => {
     dispatch(logout());
+    dispatch(resetCart());
   };
   return (
     <header>

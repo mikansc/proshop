@@ -4,7 +4,7 @@ import { Table, Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import { listOrders, getOrderDetails } from "../actions/orderActions";
+import { listOrders } from "../actions/orderActions";
 import { showDecimals } from "../helpers";
 
 const OrderListScreen = ({ history }) => {
