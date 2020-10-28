@@ -23,6 +23,7 @@ import {
   orderDetailsReducer,
   orderPayReducer,
   orderListUserReducer,
+  orderListReducer,
 } from "./reducers/orderReducers";
 
 // Create all reducers instances
@@ -39,11 +40,12 @@ const reducer = combineReducers({
   userUpdateProfile: userUpdateProfileReducer,
   userList: userListReducer,
   userDelete: userDeleteReducer,
+  userUpdate: userUpdateReducer,
   orderCreate: orderCreateReducer,
   orderDetails: orderDetailsReducer,
   orderPay: orderPayReducer,
   orderListUser: orderListUserReducer,
-  userUpdate: userUpdateReducer,
+  orderList: orderListReducer,
 });
 
 // Get information saved in localStorage, if any exists
