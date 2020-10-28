@@ -9,6 +9,8 @@ router
   .get(productController.getProducts)
   .post(protect, admin, productController.createProduct);
 
+router.get("/top", productController.getTopProducts);
+
 router
   .route("/:id/reviews")
   .post(protect, productController.creteProductReview);
