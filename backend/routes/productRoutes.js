@@ -10,6 +10,10 @@ router
   .post(protect, admin, productController.createProduct);
 
 router
+  .route("/:id/reviews")
+  .post(protect, productController.creteProductReview);
+
+router
   .route("/:id")
   .get(productController.getProductById)
   .delete(protect, admin, productController.deleteProduct)
