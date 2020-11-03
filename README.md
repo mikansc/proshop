@@ -78,15 +78,18 @@ Este repositório serve como uma base para os demais projetos de porte pequeno q
 
 O layout foi desenvolvido com <a href="https://getbootstrap.com/">Bootstrap</a> e <a href="https://bootswatch.com/">Bootswatch</a>.
 
-<h2 align="center"> Mobile 📱 </h2>
+<!-- <h2 align="center"> Mobile 📱 </h2>
 <p align="center" style="display: block;">
   <img style="display: block; width: 100%; max-width: 300px;" alt="NextLevelWeek" title="#NextLevelWeek" src="./github/bateraflix-mobile.gif">
 </p>
-<p style="margin-top: 20px">
+<p style="margin-top: 20px"> -->
 <h2 align="center"> Web 🖥 </h2>
 <p style="margin-top: 20px">
 <p align="center" style="display: block; width: 100%">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./github/bateraflix-home.gif">
+  <img alt="ProShop" title="#ProShop" src="./github/layout-web1.gif">
+</p>
+<p align="center" style="display: block; width: 100%">
+  <img alt="ProShop" title="#ProShop" src="./github/layout-web2.gif">
 </p>
 
 ---
