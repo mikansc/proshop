@@ -181,10 +181,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="http://www.mkwebdev.com.br/">
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/35317401?s=460&u=53f0a76fbf41bafa9f776c73d87ba73aefe0ff62&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Michael Nascimento</b></sub></a> <a href="http://www.mkwebdev.com.br/" title="Rocketseat"></a>
+ <sub><b>Michael Nascimento</b></sub></a> <a href="http://www.mkwebdev.com.br/" title="MK WebDev"></a>
  <br />
 
-[![Linkedin Badge](https://img.shields.io/badge/-Michael-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/michaelnsc/)
+[![Linkedin Badge](https://img.shields.io/badge/-Michael-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/michaelnsc/)](https://www.linkedin.com/in/michaelnsc/)
 [![Microsoft Badge](https://img.shields.io/badge/-michael.nsc@outlook.com-blue?style=flat-square&logo=Microsoft&logoColor=white&link=mailto:michael.nsc@outlook.com)](mailto:michael.nsc@outlook.com)
 
 ---
